@@ -3,19 +3,127 @@
 
 <head>
 <title> no </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<center>
-		<h1>hello this is a test lmao and this is h1</h1>
-		<h2>hello this is a test lmao and this is h2</h2>
-		<h3>hello this is a test lmao and this is h3</h3>
-		<p>hello this is a test lmao and this is p</p>
-		<blockquote>hello this is a test lmao and this is blockquote oops haha jk this doesnt work for some reason</blockquote>
-		<pre>hello my name is celine and i suk at coding</pre>
+	<link href="scrolling-nav.css" rel="stylesheet">
+	<center><br><br><br><br><br>
+	<h1> hellozz </h1>
+	<h3>hovering over the dropdowns in the navbar doesnt work SAD BOIZ</h3>
 	</center>
+	<p>thingz we should do xd:</p>
+	<p>fix navbar</p>
+	<p>no background color</p>
+	<p>put in content ay lmao</p>
+	<p>maybe separate into multiple pages</p>
 </head>
 
-<body>
+<body id= "page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container-fluid">
+    <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">3macs</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+          <li><a class="page-scroll" href="#emacs">.emacs</a></li>
+          <li><a class="page-scroll" href="#macros">Macros</a></li>
+          <li><a class="page-scroll" href="#melpa">MELPA</a></li>
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sample Packages <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a class="page-scroll" href="#flycheck">flycheck</a></li>
+              <li><a class="page-scroll" href="#yasnippit">yasnippit</a></li>
+              <li><a class="page-scroll" href="#autocomplete">auto-complete</a></li>
+              <li><a class="page-scroll" href="#undotree">undotree</a></li>
+            </ul>
+
+           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Reference<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a class="page-scroll" href="#bCommand">Basic emacs Commands</a></li>
+              <li><a class="page-scroll" href="#pCommand">Package Commands</a></li>
+            </ul>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="emacs" class="container-fluid">
+  <h1>.emacs</h1>
+  <p> dot emacsu </p>
+
+</div>
+
+<div id="macros" class="container-fluid">
+  <h1>Macros</h1>
+  <p>lmao macros</p>
+
+</div>
+
+
+<div id="melpa" class="container-fluid">
+  <h1>MELPA</h1>
+  <p>melpa shtuffs</p>
+
+</div>
+
+
+<div id="flycheck" class="container-fluid">
+  <h1>flycheck</h1>
+  <p>flyin' and checkin'</p>
+
+</div>
+
+<div id="yasnippit" class="container-fluid">
+  <h1>yasnippit</h1>
+  <p>more like yaaaasssss snippit</p>
+
+</div>
+
+<div id="autocomplete" class="container-fluid">
+  <h1>auto-complete</h1>
+  <p>completed</p>
+
+</div>
+
+<div id="undotree" class="container-fluid">
+  <h1>undotree</h1>
+  <p>undid ya tree</p>
+</div>
+
+<div id="bCommand" class="container-fluid">
+  <h1>Basic Commands</h1>
+  <p> i dont even like emacs smh </p>
+</div>
+
+<div id="pCommand" class="container-fluid">
+  <h1>Package Commands</h1>
+  <p>melpa shtuffs</p>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
 
 </body>
 
 </html>
+

@@ -1,36 +1,28 @@
-h1 {
+body {
 	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size: 26px;
-	font-weight: 500;
-	line-height: 26px;
-}
-h2 {
-	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size: 22px;
-	font-weight: 500;
-	line-height: 20px;
-}
-h3 {
-	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size: 17px;
-	font-weight: 500;
-	line-height: 15px;
-}
-p {
-	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 20px;
-}
-blockquote {
-	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size: 21px;
-	font-weight: 400;
-	line-height: 30px;
-}
-pre {
-	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 18px;
-}
+    position: relative; 
+  }
+h1 { font-size: 26px;font-weight: 500;line-height: 26px; }
+h2 { font-size: 22px;font-weight: 500;line-height: 20px; }
+h3 { font-size: 17px;font-weight: 500;line-height: 15px; }
+p { font-size: 15px;font-weight: 400;line-height: 20px;}
+blockquote { font-size: 21px;font-weight: 400;line-height: 30px; }
+pre { font-size: 14px;font-weight: 400;line-height: 18px; }
+
+#emacs {padding-top:50px; height:500px; background-color: #f8f8f8;}
+#macros {padding-top:50px; height:500px; background-color: white;}
+#melpa {padding-top:50px; height:500px; background-color: #f8f8f8;}
+
+#flycheck {padding-top:50px; height:500px; background-color: white;}
+#yasnippit {padding-top:50px; height:500px; background-color: #f8f8f8;}
+#autocomplete {padding-top:50px; height:500px; background-color: white;}
+#undotree {padding-top:50px; height:500px; background-color: #f8f8f8;}
+
+#bCommand {padding-top:50px; height:500px; background-color: white;}
+#pCommand {padding-top:50px; height:500px; background-color: #f8f8f8;}
+
+
+
+
+
+
