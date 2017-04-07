@@ -9,6 +9,8 @@ p { font-size: 15px;font-weight: 400;line-height: 20px;}
 blockquote { font-size: 21px;font-weight: 400;line-height: 30px; }
 pre { font-size: 14px;font-weight: 400;line-height: 18px; }
 
+
+
 #emacs {padding-top:50px; height:500px; background-color: #f8f8f8;}
 #macros {padding-top:50px; height:500px; background-color: white;}
 #melpa {padding-top:50px; height:500px; background-color: #f8f8f8;}
