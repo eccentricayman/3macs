@@ -108,7 +108,7 @@ a.navbar-brand {
 li.active, li.active > a {
     transition: 0.3s font-size;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 a.dropdown-toggle:hover + ul.dropdown-menu, a.dropdown-toggle:active + ul.dropdown-menu, ul.dropdown-menu:hover {
