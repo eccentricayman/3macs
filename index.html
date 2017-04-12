@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title> no </title>
+<title> Emacs </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,23 +11,19 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="scrolling-nav.css" rel="stylesheet">
 	<center><br><br><br><br><br>
-	<h1> hellozz </h1>
-	<h3>hovering over the dropdowns in the navbar doesnt work SAD BOIZ</h3>
+	<h1> Emacs </h1>
+	<h3>A short guide to extending your favorite extensible text editor.</h3>
 	</center>
 
 </head>
 
 <body id= "page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
-
-  <p>thingz we should do xd:</p>
-  <p>fix navbar</p>
-  <p>put in content ay lmao</p>
-  <p>maybe separate into multiple pages</p>
-  <p><b>DON'T DELETE THE QUOTE BELOW I LIKE IT >:( but the blockquote tag doesnt work plz help</b></p>
-  <blockquote>
-    <p>I use Emacs, which might be thought of as a thermonuclear word processor.</p>
-    <footer>Neal Stephenson, <a href = "https://en.wikipedia.org/wiki/In_the_Beginning..._Was_the_Command_Line">In the Beginning… was the Command Line</a></footer>
-  </blockquote>
+    <br>
+    <div style="text-align: center">
+        <br>
+        <p class="blockquote"><i>I use Emacs, which might be thought of as a thermonuclear word processor.</i></p>
+        <footer style="padding-bottom: 2.5%"> - Neal Stephenson, <a href = "https://en.wikipedia.org/wiki/In_the_Beginning..._Was_the_Command_Line">In the Beginning… was the Command Line</a></footer>
+    </div>
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
@@ -58,9 +54,9 @@
           <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a class="page-scroll" href="#flycheck">flycheck</a></li>
-              <li><a class="page-scroll" href="#yasnippit">yasnippit</a></li>
+              <li><a class="page-scroll" href="#yasnippet">yasnippet</a></li>
               <li><a class="page-scroll" href="#autocomplete">auto-complete</a></li>
-              <li><a class="page-scroll" href="#undotree">undotree</a></li>
+              <li><a class="page-scroll" href="#undo-tree">undo-tree</a></li>
             </ul>
           </li>
 
@@ -81,55 +77,230 @@
 <!-- ppt content goes in -->
 <div id="emacs" class="container-fluid">
   <h1>.emacs</h1>
-  <p> dot emacsu </p>
+  <p> Editing your .emacs file, where all your modifications will be stored. </p>
+  <br><br><br><br><br> 
+  <div class="row" style="padding-left: 5%">
+      <div class="col-sm-4">
+          <b>Modifying .emacs</b>
+          <ul>
+              <li>Generally located in a .emacs.d directory at ~/</li>
+              <li>Init file for your emacs (every time you run emacs, this file will be run).</li>
+              <li>Useful utilities and packages</li>
+              <li>Customization through themes and etc.</li>
+          </ul>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+          <b>Useful Commands</b>
+          <ul>
+              <li>(electric-pair mode 1) </li>
+              <li>(setq x-select-enable clipboard t) </li>
+              <li>(show-paren-mode 1) </li>
+              <li>(global-linum-mode 1) </li>
+              <li>(setq-default tab-width 4) </li>
+              <li>(load-theme < theme-name > ) </li>
+          </ul>
+      </div>
+  </div>
 
 </div>
 
 <div id="macros" class="container-fluid">
   <h1>Macros</h1>
-  <p>lmao macros</p>
-
+  <p>How to use macros in order to automate long tasks.</p>
+  <div style="padding-left: 5%">
+      <b>What is an Emacs Macro?</b>
+      <ul>
+          <li>An Emacs Macro records the user’s actions ( be they keyboard, mouse, or menu-related ) and can be executed in a single command</li>
+          <li>This command can then be called in order to repeat the macro’s actions.</li>
+          <li>Defined Macros (with names) can be saved into your .emacs file for future use.</li>
+      </ul>
+  </div>
+  <br><br>
+  <div class="row" style="padding-left: 5%">
+      <div class="col-sm-4">
+          <b>Defining Macros</b>
+          <ul>
+              <li>C-x ( or < f3 > to begin defining a macro</li>
+              <li>C-x ) or < f4 > to stop defining the macro</li>
+              <li>M-x name-last-kdb-macro < name > to give your macro a name</li>
+          </ul>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4">
+          <b>Using Macros</b>
+          <ul>
+              <li>C-x e or < f4 > to use the last defined macro</li>
+              <li>C-u < n > C-x e to use your last defined macro n times</li>
+              <li>M-x insert-kbd-macro < name > to insert macro into a file (if you’re modifying .emacs) </li>
+          </ul>
+      </div>
+  </div>
 </div>
 
 
 <div id="melpa" class="container-fluid">
   <h1>MELPA</h1>
-  <p>melpa shtuffs</p>
-
+  <p>The Milkypostman Emacs Lisp Package Archive, or where we will get  packages to improve our Emacs experience.</p>
+  <br>
+  <div style="padding-left: 5%">
+      <b>Where to Find Packages</b>
+      <ul>
+          <li>Most emacs packages are located in a package archive called MELPA.</li>
+          <li>MELPA is the biggest archive for Emacs packages, and is where we will get all of our packages.</li>
+          <li>To be able to install packages from MELPA, you need the following code in your .emacs - this can also be found at http://melpa.org/#/getting-started</li>
+        </ul>
+  </div>
+  <br>
+  <div style="padding-left: 5% ; width: 85% ; padding-bottom: 5%">
+      <img src="images/melpa.png" alt="melpa" style="width: 100%; border: 1px solid rgba(0, 0, 0, 0.2)"></img>
+  </div>
 </div>
 
 
 <div id="flycheck" class="container-fluid">
   <h1>flycheck</h1>
-  <p>flyin' and checkin'</p>
-
+  <p>Error checking as you code.</p>
+  <div class="row" style="padding-left: 5%">
+      <div class="col-sm-4">
+          <br><br>
+          <b>What is flycheck?</b>
+          <ul>
+              <li>Flycheck is an emacs package that highlights incorrect code / code that won’t compile, and states the error.</li>
+          </ul>
+          <b>How can I install it?</b>
+          <ul>
+              <li>M-x package-install RET flycheck RET</li>
+          </ul>
+          <b>How can I use it?</b>
+          <ul>
+              <li>To enable flycheck every time you use emacs, put the following line in your .emacs</li>
+              <li>(add-hook 'after-init-hook #'global-flycheck-mode)</li>
+          </ul>
+      </div>
+      <div class="col-sm-6">
+          <img src="images/flycheck.png" alt="flycheck" style="width: 100%;"></img>
+      </div>
+  </div>
 </div>
 
-<div id="yasnippit" class="container-fluid">
-  <h1>yasnippit</h1>
-  <p>more like yaaaasssss snippit</p>
-
+<div id="yasnippet" class="container-fluid">
+  <h1>yasnippet</h1>
+  <p>Inserting snippets of common code to save you time.</p>
+  <div class="row" style="padding-left: 5%">
+      <div class="col-sm-4">
+          <br><br>
+          <b>What is yasnippet?</b>
+          <ul>
+              <li>Yasnippet lets you type abbreviations that expand into code.<li>
+          </ul>
+          <b>How can I install it?</b>
+          <ul>
+              <li>M-x package-install RET yasnippet RET</li>
+          </ul>
+          <b>How can I use it?</b>
+          <ul>
+              <li>To enable yasnippet when opening emacs, add this to your .emacs</li>
+              <li>(yas-reload-all)</li>
+	          <li>(add-hook ‘prog-mode-hook  </li>
+              <li>#’yas-minor-mode)</li>
+              <li>Yasnippet lets you create your own abbreviations, but the default ones can be found with this command:</li>
+              <li>M-x yas-describe-tables RET</li>
+              <li>To use an abbreviation, simply type it in and press TAB.</li>
+          </ul>
+      </div>
+      <div class="col-sm-6">
+          <img src="images/yasnippet.png" alt="yasnippet" style="width: 100%;"></img>
+      </div>
+  </div>
 </div>
 
 <div id="autocomplete" class="container-fluid">
   <h1>auto-complete</h1>
-  <p>completed</p>
-
+  <p>Letting you press TAB to complete your code, like modern text editors.</p>
+  <div class="row" style="padding-left: 5%">
+      <div class="col-sm-4">
+          <br><br>
+          <b>What is auto-complete?</b>
+          <ul>
+              <li>Auto-complete is a package that implements tab completion in Emacs.</li>
+          </ul>
+          <b>How can I install it?</b>
+          <ul>
+              <li>M-x package-install RET auto-complete RET</li>
+          </ul>
+          <b>How can I use it?</b>
+          <ul>
+              <li>To enable auto-complete every time you use emacs, put the following line in your .emacs</li>
+              <li>(ac-config-default)</li>
+              <li>Completion results show up after 0.5 seconds; press TAB to cycle through them and RET to select one.</li>
+          </ul>
+      </div>
+      <div class="col-sm-6">
+          <img src="images/auto-complete.png" alt="auto-complete" style="width: 100%;"></img>
+      </div>
+  </div>
 </div>
 
-<div id="undotree" class="container-fluid">
-  <h1>undotree</h1>
-  <p>undid ya tree</p>
+<div id="undo-tree" class="container-fluid">
+  <h1>undo-tree</h1>
+  <p>Letting you view old changes in a tree format.</p>
+  <div class="row" style="padding-left: 5%">
+      <div class="col-sm-4">
+          <br><br>
+          <b>What is undo-tree?</b>
+          <ul>
+              <li>Undo-tree saves all edits you’ve made in a file, and lets you go back to any instance without spamming C-/, visualized in a tree format.</li>
+          </ul>
+          <b>How can I install it?</b>
+          <ul>
+              <li>M-x package-install RET undo-tree RET</li>
+          </ul>
+          <b>How can I use it?</b>
+          <ul>
+              <li>To enable undo-tree when opening emacs, add this to your .emacs</li>
+              <li>(global-undo-tree-mode)</li>
+              <li>To use it, do M-x undo-tree-visualize</li>
+              <li>This opens up two windows, one tree of all your edits and one window that shows changes in a manner similar to git diff.</li>
+              <li>To go back to old changes, click a node on the tree.</li>
+          </ul>
+      </div>
+      <div class="col-sm-6">
+          <img src="images/undo-tree.png" alt="undo-tree" style="width: 100%;"></img>
+      </div>
+  </div>
 </div>
 
 <div id="bCommand" class="container-fluid">
   <h1>Basic Commands</h1>
-  <p> i dont even like emacs smh </p>
+  <p>Basic commands in Emacs.</p>
+  <img style="padding-left: 5% ; width: 95%" alt="basic-commands" src="images/basic-commands.png"></img>
 </div>
 
 <div id="pCommand" class="container-fluid">
   <h1>Package Commands</h1>
-  <p>melpa shtuffs</p>
+  <p>Commands used in the package list in emacs.</p>
+  <div class="row" style="padding-left: 5%">
+      <div class="col-sm-4">
+          <br><br>
+          <ul>
+              <li>To get an interactive list of all MELPA packages, use the command:</li>
+              <li>M-x list-packages RET</li>
+              <li>While in this mode, certain letters act as commands when on a line.</li>
+              <li>i to install</li>
+              <li>d to delete package</li>
+              <li>u to upgrade</li>
+              <li>U to upgrade all</li>
+              <li>x to make changes</li>
+              <li>If you know what package you’re installing / uninstalling, here are direct commands.</li>
+              <li>M-x package-install RET < pkg > RET</li>
+              <li>M-x package-delete RET < pkg > RET</li>
+          </ul>
+      </div>
+      <div class="col-sm-6">
+          <img src="images/package-commands.png" alt="package-commands" style="width: 100%;"></img>
+      </div>
+  </div>
 </div>
 
 

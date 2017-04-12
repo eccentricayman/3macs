@@ -22,17 +22,14 @@ h3 {
 }
 
 p {
-    padding-left: 6%;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
 }
 
-blockquote {
-    padding-left: 80px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
+.blockquote {
+    padding-left: 0;
+    font-weight: bold;
 }
 
 pre {
@@ -43,68 +40,77 @@ pre {
 
 a.navbar-brand {
 	padding-top: 10px;
-	padding-left: 25px;
+	padding-left: 5vw;
+    float: left;
 }
 
+#myNavbar {
+    float: right;
+    padding-right: 5%;
+}
 
 #emacs {
     padding-top:50px;
-    height:500px;
+    padding-bottom: 50px;
+    height:auto;
     background-color: #f8f8f8;
 }
 
 #macros {
     padding-top:50px;
-    height:500px;
+    height:auto;
     background-color: white;
 }
 
 #melpa {
     padding-top:50px;
-    height:500px;
+    height: auto;
     background-color: #f8f8f8;
 }
 
 
 #flycheck {
     padding-top:50px;
-    height:500px;
+    height: auto;
     background-color: white;
 }
 
-#yasnippit {
+#yasnippet {
     padding-top:50px;
-    height:500px;
+    height: auto;
     background-color: #f8f8f8;
 }
 
 #autocomplete {
     padding-top:50px;
-    height:500px;
+    height: auto;
     background-color: white;
 }
 
-#undotree {
+#undo-tree {
     padding-top:50px;
-    height:500px;
+    height: auto;
     background-color: #f8f8f8;
 }
 
 #bCommand {
     padding-top:50px;
-    height:500px;
+    height: auto;
     background-color: white;
 }
 
 #pCommand {
     padding-top: 50px;
-    height: 500px;
+    height: auto;
     background-color: #f8f8f8;
 }
 
 li.active, li.active > a {
-    background-color: rgb( 248, 248,248 ) !important;
     transition: 0.3s font-size;
     font-weight: bold;
     font-size: 15px;
+}
+
+a.dropdown-toggle:hover + ul.dropdown-menu, a.dropdown-toggle:active + ul.dropdown-menu, ul.dropdown-menu:hover {
+    display: block !important;
 }
